@@ -44,7 +44,8 @@ This Terraform configuration creates:
    - Add Dockerfile, index.html, and buildspec.yml
    - Push to trigger the first pipeline run
 
-# you can use git-remote-codecommit to push to codecommit using iam credentials  
+# you can use git-remote-codecommit to push to codecommit using iam credentials 
+``` 
 sudo apt update
 sudo apt install pipx
 pipx ensurepath
@@ -55,7 +56,7 @@ pipx install git-remote-codecommit
 git add ./*  
 git commit -m "Add container files"
 git push origin main
-
+```
 4. **Wait for pipeline to complete successfully**  (note that the build stage will fail -the first time you run-# due to the lambda update command , run it again after step 5, or move it to a different stage)
 
 ### Phase 3: Lambda and CloudFront Setup
