@@ -1,5 +1,5 @@
 # Step 1: Use a lightweight Nginx image designed to run without root privileges
-FROM nginxinc/nginx-unprivileged:alpine-slim
+FROM public.ecr.aws/nginx/nginx-unprivileged:alpine-slim
 
 # Step 2: Copy the AWS Lambda Web Adapter binary
 # Using the latest stable version (0.9.1) as of 2026

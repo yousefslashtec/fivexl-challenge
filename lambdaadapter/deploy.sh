@@ -17,5 +17,4 @@ terraform init -backend-config="bucket=$BUCKET_NAME" -backend-config="key=main/t
 terraform apply -auto-approve
 
 echo "Deployment complete. Push code to CodeCommit to trigger pipeline."
-echo "After pipeline completes, run Phase 3:"
-echo "cd lambda && terraform init -backend-config=\"bucket=$BUCKET_NAME\" -backend-config=\"key=lambda/terraform.tfstate\" -backend-config=\"region=us-east-2\" && terraform apply"
+"
