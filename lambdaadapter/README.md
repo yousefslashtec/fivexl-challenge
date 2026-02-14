@@ -73,7 +73,6 @@ This will automatically:
 - `Dockerfile`: Container definition
 - `index.html`: Web application files
 - `buildspec.yml`: Build instructions
-- `appspec.yml`: CodeDeploy configuration
 
 ## Outputs
 
